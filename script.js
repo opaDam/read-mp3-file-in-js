@@ -12,7 +12,7 @@ input.addEventListener("change", (event) => {
   var file = event.target.files[0];
   jsmediatags.read(file, {
     onSuccess: function(tag) { 
-    try{ 
+    try{ console.log(tag);
       // Array buffer to base64
       const data = tag.tags.picture.data;
       const format = tag.tags.picture.format;
